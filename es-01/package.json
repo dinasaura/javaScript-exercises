@@ -1,0 +1,15 @@
+{
+  "name": "es-01",
+  "version": "1.0.0",
+  "description": "Create a function named `calculateSalary` which takes an input parameter, and calculates and returns the corresponding salary. You must use the `switch` switch statement. For each role the corresponding salary is as follows:",
+  "main": "exercise-2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
