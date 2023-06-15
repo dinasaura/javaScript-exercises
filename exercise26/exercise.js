@@ -1,10 +1,10 @@
 // function sum(num1, num2, num3, num4, num5, ) {
 //     return num1 + num2 + num3 + num4 + num5;
 // }
-function sum(...rests){
+function sum(...rest){
     let sum = 0;
-    for (let rest of rests){
-        sum += rest
+    for (let item of rest){
+        sum += item
     }
     return sum
 }
