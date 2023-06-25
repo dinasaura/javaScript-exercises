@@ -1,0 +1,60 @@
+.full__page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  font-family: Brutal, sans-serif;
+  text-align: center;
+  width: auto;
+  height: 100vh;
+}
+.full__page .full__page__svg .border-radius {
+  margin-top: 100px;
+}
+.full__page .title__h2 {
+  font-size: 30px;
+}
+.full__page .paragraph__style {
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 0.01em;
+  padding: 5px;
+}
+.full__page .general__button {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  font-size: 0.75rem;
+  min-width: 40px;
+  min-height: 40px;
+  font-family: Brutal, sans-serif; /**/
+  font-weight: 700;
+  line-height: 1.33;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+  border: none;
+}
+.full__page .general__button a {
+  text-decoration: none;
+  color: white;
+}
+.full__page .button__blue {
+  background-color: #0074e4;
+  margin: 20px 0 10px 0;
+}
+.full__page .button__trasparent {
+  background-color: transparent;
+}
+@media screen and (min-width: 425px){
+  .full__page .title__h2 {
+    max-width: 30%;
+  }
+
+  .full__page .paragraph__style {
+    max-width: 30%;
+  }
+}
+
+
+/*# sourceMappingURL=style.css.map */

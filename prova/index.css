@@ -1,0 +1,46 @@
+
+.cards__reviews{
+    display: flex;
+    padding: 20px;
+}
+
+.card__review{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--white_text);
+    background-color: var(--footer_background);
+    font-size: 14px;
+    line-height: 20px;
+    font-family: var(--inter_font);
+   
+}
+
+.user-color{
+    color: var(--opaquegrey_text);
+}
+
+.card__review__space{
+    padding: 0.2px;
+    background-color: var(--opaquegrey_text);
+}
+
+.card__review__text{
+    text-align:justify;   
+  }
+
+
+.underline{
+    text-decoration: underline;
+}
+
+.link-svg{
+    max-height: 14px;
+}
+@media screen and (max-width: 1400px){
+    
+    .card__review{
+        padding: 20px;
+    }
+    
+}

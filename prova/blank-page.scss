@@ -1,0 +1,56 @@
+.full__page {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(15, 15, 15);
+  color: white;
+  padding: 30px;
+  font-family: Brutal, sans-serif;
+  text-align: center;
+
+  .full__page__svg{
+    .border-radius{
+        border-radius: 10px;
+    }
+  }
+
+  .title__h2{
+    max-width: 40%;
+  }
+
+  .paragraph__style {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: 0.01em;
+    max-width: 35%;
+  }
+
+  .general__button {
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    font-size: 0.75rem;
+    min-width: 40px;
+    min-height: 40px;
+    font-family: Brutal, sans-serif; /**/
+    font-weight: 700;
+    line-height: 1.33;
+    border-radius: 4px;
+    letter-spacing: 0.04em;
+    border: none;
+    a{
+        text-decoration: none;
+        color: white;
+    }
+  }
+
+
+  .button__blue {
+    background-color: #0074e4;
+    margin: 20px 0 10px 0;
+  }
+  .button__trasparent {
+    background-color: transparent;
+  }
+}
