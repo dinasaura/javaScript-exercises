@@ -5,10 +5,15 @@ const person = {
   age: 25,
 };
 
-const { id, age } = person; 
 
-const filteredPerson = { id, age }; 
 
-const json = JSON.stringify(filteredPerson); 
+function replacer(key, value){
+  if(typeof value === 'string'){
+    return undefined;
+  }
+  return value
+}
+
+const json = JSON.stringify(person, replacer); 
 
 console.log(json); // Should return: { "id": 1, "age": 25 }
