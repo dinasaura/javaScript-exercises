@@ -6,6 +6,6 @@ const person = {
 };
 
 
-const{ id, personInfo} = person;
+const{ id, ...personInfo} = person;
 
 console.log(id, personInfo);
