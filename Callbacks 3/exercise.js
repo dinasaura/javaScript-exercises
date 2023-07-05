@@ -1,6 +1,6 @@
 function repeatHello(callback){
    const intervalId = setInterval (() => {
-    console.log('HELLO');
+    callback('HELLO');
   }, 1000)
 
   setTimeout(() => {
@@ -8,4 +8,7 @@ function repeatHello(callback){
   },5000)
 }
 
-repeatHello();
+repeatHello((message) => {
+  console.log(message);
+}
+);
