@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>    
+</head>
+<body>
+    <h2> Local Storage </h2>
+
+    <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+    <p>Number of clicks:</p>
+    <p id="demo"></p>
+
+    <script>
+        const user = {
+          id: 1,
+          name: "John",
+          age: 25,
+        };
+
+        function salvaUtente() {
+          localStorage.setItem('user', JSON.stringify(user));
+        }
+
+        salvaUtente();
+
+        function clickCounter() {
+          if (localStorage.clickcount) {
+            localStorage.clickcount = Number(localStorage.clickcount) + 1;
+          } else {
+            localStorage.clickcount = 1;
+          }
+          document.getElementById("demo").innerHTML = localStorage.clickcount;
+        }
+    </script>
+</body>
+</html>
