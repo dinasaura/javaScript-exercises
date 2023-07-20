@@ -20,5 +20,9 @@
 </html>
 
 <script>
-  // code here
+// visto che vogliamo prendere tutti i form-input poi lo stampiamo sotto forma di array
+const formInputFields = document.querySelectorAll('.form-input');
+const formInputValues = [...formInputFields].map(inputField => inputField.value);
+
+console.log( formInputValues);
 </script>
