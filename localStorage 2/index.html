@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local storage</title>    
+</head>
+<body>
+    <h1>Local Storage</h1>
+
+    <script>
+    const user = {
+  id: 1,
+  name: "John",
+  age: 25,
+};
+
+function salvaUtente(user) {
+  const userJSON = JSON.stringify(user);
+  localStorage.setItem('user', userJSON);
+
+}
+
+salvaUtente(user);
+//  console.log("prova dopo", salvaUtente);
+
+function recuperaUtente(){
+  const userJSON = localStorage.getItem('user');
+  if(userJSON === null) {
+      console.log('Nessun utente trovato');
+      return;
+    }
+    {
+    const user = JSON.parse(userJSON);
+    console.log('utente recuperato:', user);
+  }
+}
+
+
+recuperaUtente();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Fetch the todos (https://jsonplaceholder.typicode.com/todos). Divide the completed from the not completed todos then save the results in sessionStorage. After that retrieve the uncompleted todos from storage and print the in the console.
